@@ -16,7 +16,7 @@ const Footer = () => {
             className="underline underline-offset-2"
             target={"_blank"}
           >
-            Mihai Chirilov
+            ikoniske
           </Link>
         </div>
 

@@ -1,14 +1,14 @@
-import Layout from "@/components/Layout";
-import Head from "next/head";
-import Image from "next/image";
-import profile from "../../public/images/profile/electrician-pic-2.png";
-import { useInView, useMotionValue, useSpring } from "framer-motion";
-import { useEffect, useRef } from "react";
-import Skills from "@/components/Skills";
-import Experience from "@/components/Experience";
-import Education from "@/components/Education";
-import AnimatedText from "@/components/AnimatedText";
-import TransitionEffect from "@/components/TransitionEffect";
+import Layout from '@/components/Layout';
+import Head from 'next/head';
+import Image from 'next/image';
+import profile from '../../public/images/profile/adrian-pena-01.png';
+import { useInView, useMotionValue, useSpring } from 'framer-motion';
+import { useEffect, useRef } from 'react';
+import Skills from '@/components/Skills';
+import Experience from '@/components/Experience';
+import Education from '@/components/Education';
+import AnimatedText from '@/components/AnimatedText';
+import TransitionEffect from '@/components/TransitionEffect';
 
 function AnimatedNumberFramerMotion({ value }) {
   const ref = useRef(null);
@@ -23,7 +23,7 @@ function AnimatedNumberFramerMotion({ value }) {
 
   useEffect(
     () =>
-      springValue.on("change", (latest) => {
+      springValue.on('change', (latest) => {
         if (ref.current && latest.toFixed(0) <= value) {
           ref.current.textContent = latest.toFixed(0);
         }
@@ -40,29 +40,29 @@ export default function About() {
       <Head>
         <title>Adrian Pena | Despre mine</title>
         <meta
-          name="description"
-          content="Afla mai multe detalii despre mine, despre ce ma motiveaza si ce valori ma definesc ca om si ca prestator de servicii."
+          name='description'
+          content='Afla mai multe detalii despre mine, despre ce ma motiveaza si ce valori ma definesc ca om si ca prestator de servicii.'
         />
       </Head>
       <TransitionEffect />
       <main
         className={`flex  w-full flex-col items-center justify-center dark:text-light`}
       >
-        <Layout className="pt-16">
+        <Layout className='pt-16'>
           <AnimatedText
-            text="Calitate inainte de toate!"
-            className="mb-16 !text-8xl !leading-tight lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
+            text='Calitate inainte de toate!'
+            className='mb-16 !text-8xl !leading-tight lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8'
           />
 
-          <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
+          <div className='grid w-full grid-cols-8 gap-16 sm:gap-8'>
             <div
-              className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 
-            md:col-span-8"
+              className='col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 
+            md:col-span-8'
             >
-              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
+              <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>
                 BIO
               </h2>
-              <p className="font-medium ">
+              <p className='font-medium '>
                 Buna, sunt <strong>Adrian</strong>, si ofer o gama variata de
                 servicii. Imi plac solutiile rapide si eficiente, care sa
                 satisfaca clientii pe termen lung. Am o experienta bogata in
@@ -71,11 +71,11 @@ export default function About() {
                 reparatii calculatoare sau laptopuri si recuperari de date de pe
                 HDD/SSD/card.
               </p>
-              <p className="my-4 font-medium">
+              <p className='my-4 font-medium'>
                 Cred intr-o relatie pe termen lung cu clientii mei si de aceea
                 calitatea vine inainte de toate!
               </p>
-              <p className="font-medium">
+              <p className='font-medium'>
                 Oricare ar fi proiectul pentru care sunt solicitat, mare sau
                 mic, ma implic la fel de mult si imi place sa fac lucrurile
                 bine. Increderea se construieste pas cu pas si reprezinta
@@ -84,61 +84,61 @@ export default function About() {
               </p>
             </div>
             <div
-              className="relative col-span-3 h-max rounded-2xl border-2 border-solid border-dark 
+              className='relative col-span-3 h-max rounded-2xl border-2 border-solid border-dark 
             bg-light p-8 dark:border-light dark:bg-dark
             xl:col-span-4 md:col-span-8 md:order-1
-            "
+            '
             >
               <div
-                className="absolute  top-0 -right-3 -z-10 h-[103%] w-[102%]  rounded-[2rem] rounded-br-3xl 
+                className='absolute  top-0 -right-3 -z-10 h-[103%] w-[102%]  rounded-[2rem] rounded-br-3xl 
                 bg-dark
-        dark:bg-light  "
+        dark:bg-light  '
               />
               <Image
-                className="h-auto w-full rounded-2xl"
+                className='h-auto w-full rounded-2xl'
                 src={profile}
-                alt="Adrian Pena"
-                sizes="(max-width: 768px) 100vw,
+                alt='Adrian Pena'
+                sizes='(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
-              33vw"
+              33vw'
                 priority
               />
             </div>
             <div
-              className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row 
-            xl:items-center md:order-3"
+              className='col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row 
+            xl:items-center md:order-3'
             >
-              <div className="flex flex-col items-end justify-center xl:items-center">
-                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
+              <div className='flex flex-col items-end justify-center xl:items-center'>
+                <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
                   <AnimatedNumberFramerMotion value={50} />+
                 </span>
                 <h2
-                  className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
-                xl:text-center md:text-lg sm:text-base xs:text-sm"
+                  className='mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
+                xl:text-center md:text-lg sm:text-base xs:text-sm'
                 >
                   clienti multumiti
                 </h2>
               </div>
 
-              <div className="flex flex-col items-end justify-center xl:items-center">
-                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
+              <div className='flex flex-col items-end justify-center xl:items-center'>
+                <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
                   <AnimatedNumberFramerMotion value={100} />+
                 </span>
                 <h2
-                  className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
-                xl:text-center md:text-lg sm:text-base xs:text-sm"
+                  className='mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
+                xl:text-center md:text-lg sm:text-base xs:text-sm'
                 >
                   proiecte realizate
                 </h2>
               </div>
 
-              <div className="flex flex-col items-end justify-center xl:items-center">
-                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
+              <div className='flex flex-col items-end justify-center xl:items-center'>
+                <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
                   <AnimatedNumberFramerMotion value={15} />+
                 </span>
                 <h2
-                  className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
-                xl:text-center md:text-lg sm:text-base xs:text-sm"
+                  className='mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
+                xl:text-center md:text-lg sm:text-base xs:text-sm'
                 >
                   ani de experienta
                 </h2>

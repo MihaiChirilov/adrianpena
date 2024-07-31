@@ -180,9 +180,9 @@ export default function Projects() {
           <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
             <div className='col-span-12'>
               <FeaturedProject
-                type='Proiect de dimensiuni mari'
-                title='Montare instalatii electrice'
-                summary='Constructie noua de 5 etaje cu apartamente de locuit la care am lucrat in cadrul unei echipe de electricieni responsabili cu instalarea circuitelor electrice.'
+                type='Proiect de dimensiuni medii'
+                title='Montare tablou electric'
+                summary='Montare sau inlocuire tablou electric cu componente moderne, fiabile si respectarea normelor in vigoare.'
                 img={proj1}
                 link='#'
                 github='https://github.com/codebucks27/CryptoBucks-Final-Code'

@@ -61,7 +61,7 @@ export default function About() {
                 BIO
               </h2>
               <p className='font-medium '>
-                Buna, sunt <strong>Adrian</strong>, si ofer o gama variata de
+                Buna, eu sunt <strong>Adrian</strong>, si ofer o gama variata de
                 servicii. Imi plac solutiile rapide si eficiente, care sa
                 satisfaca clientii pe termen lung. Am o experienta bogata in
                 instalatii, tablouri sau circuite electrice. De asemenea sunt
